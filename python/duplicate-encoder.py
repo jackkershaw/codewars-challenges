@@ -12,10 +12,14 @@
 
 def duplicate_encode(word):
     answer = ""
+    word = word.lower()
     for char in word:
-        if word.lower().count(char)==1:
+        if word.count(char)==1:
             answer+="("
         else:
             answer+=")"
     print(answer)
-duplicate_encode("rEcede")
+duplicate_encode("h)kQ!Gc)A")
+
+
+# Testing for word "h)kQ!Gc)A": '()()()())' should equal '()((((()('
